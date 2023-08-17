@@ -5,7 +5,7 @@ Torre Technical Skill App is a web application built using React that allows use
 <img width="350" alt="Captura de pantalla 2023-08-17 a la(s) 15 35 11" src="https://github.com/manugordon/torre-technical-testing/assets/114536586/b4a2164a-5d46-4789-9e14-cb45b70fb8b3">
 <img width="350" alt="Captura de pantalla 2023-08-17 a la(s) 15 34 50" src="https://github.com/manugordon/torre-technical-testing/assets/114536586/28615c34-196c-473e-a898-bfecced0ee24">
 
-
+The link to te deployed app is: https://torre-technical-testing.vercel.app/
 ## 🛠️⚙️ Development configuration
 
 In the project directory, you can run:
