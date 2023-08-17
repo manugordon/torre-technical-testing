@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Spinner from './components/Spinner';
 import UserCard from './components/UserCard';
 import UserSearchBar from './components/UserSearchBar';
+import userService from './services/user.service';
 
 function App() {
   const [userData, setUserData] = useState(null);
@@ -13,14 +14,7 @@ function App() {
     try {
       setIsLoading(true);
       setShowSearchBar(false)
-      const requestOptions = {
-        method: 'GET'
-      };
-      const response = await fetch(`/api/bios/${username}`, requestOptions);
-      if (!response.ok) {
-        throw new Error('Failed to fetch user data');
-      }
-      const data = await response.json();
+      const data = await userService.getUser(username);
       setUserData(data);
     } catch (error) {
       console.error('Error fetching user data:', error);
