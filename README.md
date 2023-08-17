@@ -2,8 +2,8 @@
 
 Torre Technical Skill App is a web application built using React that allows users to list their skills and view additional details about each skill. The app is designed to showcase a user's skills and provide a seamless experience for exploring related information.
 
-<img width="500" alt="Captura de pantalla 2023-08-17 a la(s) 15 35 11" src="https://github.com/manugordon/torre-technical-testing/assets/114536586/b4a2164a-5d46-4789-9e14-cb45b70fb8b3">
-<img width="500" alt="Captura de pantalla 2023-08-17 a la(s) 15 34 50" src="https://github.com/manugordon/torre-technical-testing/assets/114536586/28615c34-196c-473e-a898-bfecced0ee24">
+<img width="350" alt="Captura de pantalla 2023-08-17 a la(s) 15 35 11" src="https://github.com/manugordon/torre-technical-testing/assets/114536586/b4a2164a-5d46-4789-9e14-cb45b70fb8b3">
+<img width="350" alt="Captura de pantalla 2023-08-17 a la(s) 15 34 50" src="https://github.com/manugordon/torre-technical-testing/assets/114536586/28615c34-196c-473e-a898-bfecced0ee24">
 
 
 ## 🛠️⚙️ Development configuration
