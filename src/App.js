@@ -16,7 +16,7 @@ function App() {
       const requestOptions = {
         method: 'GET'
       };
-      const response = await fetch(`https://bio.torre.co/api/bios/${username}`, requestOptions);
+      const response = await fetch(`/api/bios/${username}`, requestOptions);
       if (!response.ok) {
         throw new Error('Failed to fetch user data');
       }
