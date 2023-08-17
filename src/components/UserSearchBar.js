@@ -19,6 +19,7 @@ const UserSearchBar = ({ onSearch }) => {
         <div>
             <TextField
                 label="Search Username"
+                value={username}
                 sx={{
                     color: 'white',
                     '& input': {
@@ -54,7 +55,7 @@ const UserSearchBar = ({ onSearch }) => {
                 InputProps={{
                     endAdornment: (
                         <InputAdornment position="end">
-                            <IconButton >
+                            <IconButton onClick={handleSearchClick} >
                                 <SearchIcon />
                             </IconButton>
                         </InputAdornment>

@@ -7,6 +7,22 @@
   background-color: #27292d;
 }
 
+/* UserDetails */
+.user-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: azure;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  margin-bottom: 10px; /* Espacio entre la imagen y el nombre */
+}
+
 @-webkit-keyframes honeycomb {
   0%,
   20%,

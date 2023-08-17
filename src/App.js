@@ -24,6 +24,7 @@ function App() {
       setUserData(data);
     } catch (error) {
       console.error('Error fetching user data:', error);
+      alert('User not found');
     } finally {
       setIsLoading(false);
     }
