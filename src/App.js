@@ -7,16 +7,33 @@ import UserSearchBar from './components/UserSearchBar';
 function App() {
   const [userData, setUserData] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  
-  const fetchUser = (value) => {
-    console.log(value);
+  const [showSearchBar, setShowSearchBar] = useState(true);
+
+  const fetchUser = async (username) => {
+    try {
+      setIsLoading(true);
+      setShowSearchBar(false)
+      const requestOptions = {
+        method: 'GET'
+      };
+      const response = await fetch(`/api/bios/${username}`, requestOptions);
+      if (!response.ok) {
+        throw new Error('Failed to fetch user data');
+      }
+      const data = await response.json();
+      setUserData(data);
+    } catch (error) {
+      console.error('Error fetching user data:', error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
     <div className="App">
-      { isLoading && <Spinner/> } 
-      { userData && <UserCard userData={userData}/>}
-      <UserSearchBar onSearch={fetchUser}/>
+      {isLoading && <Spinner />}
+      {userData ? <UserCard userData={userData} /> : null}
+      {showSearchBar && <UserSearchBar onSearch={fetchUser} />}
     </div>
   );
 }

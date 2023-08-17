@@ -1,6 +1,7 @@
 {
   "name": "torre-technical-testing",
   "version": "0.1.0",
+  "proxy": "https://bio.torre.co",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
